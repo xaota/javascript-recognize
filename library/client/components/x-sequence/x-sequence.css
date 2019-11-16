@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+:host {
+  display: block;
+}
+
+slot {
+  line-height: 1.8;
+}
+
+::slotted(span), ::slotted(material-chip-tooltip) {
+  margin: 0 2px;
+  vertical-align: middle;
+}
+
+::slotted(span:first-child), ::slotted(material-chip-tooltip:first-child) {
+  margin-left: 0;
+}
+
+::slotted(span:last-child), ::slotted(material-chip-tooltip:last-child) {
+  margin-right: 0;
+}

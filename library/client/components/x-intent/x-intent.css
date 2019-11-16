@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+#host {
+  display: flex;
+  justify-content: space-between;
+}
+
+material-caption, material-text {
+  display: inline;
+}
+
+material-caption {
+  margin-right: 1em;
+}
+
+material-checkbox {
+  display: none;
+}
+
+:host([rule]) material-checkbox {
+  display: inline-block;
+}
+
+:host([rule]) material-caption {
+  margin-left: 0.5em;
+}
+
+#detail {
+  color: #777;
+}

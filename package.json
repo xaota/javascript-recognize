@@ -1,0 +1,40 @@
+{
+  "name": "javascript-recognize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "javascript-std-lib": "latest",
+    "web-material": "latest"
+  },
+  "devDependencies": {
+    "babel-eslint": "latest",
+    "eslint": "latest"
+  },
+  "scripts": {},
+  "author": "github.com/xaota",
+  "license": "Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xaota/javascript-recognize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xaota/javascript-recognize/issues"
+  },
+  "homepage": "https://github.com/xaota/javascript-recognize#readme",
+  "keywords": [
+    "web components",
+    "material",
+    "native",
+    "esmodules",
+    "javascript",
+    "browser",
+    "entities",
+    "intents",
+    "recognize",
+    "tokenization",
+    "natural language processing",
+    "russian"
+  ]
+}

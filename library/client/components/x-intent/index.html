@@ -1,0 +1,14 @@
+<template>
+  <link rel="stylesheet" href="x-intent.css" />
+
+  <div id="host">
+    <div id="root">
+      <material-tooltip content="использовать намерение при анализе" x="right" y="center">
+        <material-checkbox></material-checkbox>
+      </material-tooltip>
+      <material-caption small><slot></slot></material-caption>
+      <material-text id="entity"><!-- список из x-entity --></material-text>
+    </div>
+    <material-text id="detail"><!-- дополнителоьная информация --></material-text>
+  </div>
+</template>
