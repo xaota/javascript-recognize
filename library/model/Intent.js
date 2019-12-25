@@ -81,4 +81,9 @@ import Entity from './Entity.js';
     static export(list) {
       return list.map(e => e.id);
     }
+
+  /** проверка вхождения намерения в список / in */
+    static in(item, list) {
+      return list.some(e => e.id === item.id);
+    }
   }

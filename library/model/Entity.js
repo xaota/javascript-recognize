@@ -66,4 +66,14 @@
     static export(list) {
       return list.map(e => e.id);
     }
+
+  /** создание списка сущностей, входящих в список намерений / listFromIntents */
+    static listFromIntents(intents = []) {
+      return intents.map(e => e.entities).flat().filter(Entity.uniques);
+    }
+
+  /** проверка вхождения сущности в список / in */
+    static in(item, list) {
+      return list.some(e => e.id === item.id);
+    }
   }
