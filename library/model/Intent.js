@@ -21,7 +21,7 @@ import Entity from './Entity.js';
     * @param {...string} values добавляемые намерения
     * @return {Intent} @this
     */
-    add(...values) {
+    add(...values = []) {
       this.entities = this.entities
         .concat(values.flat(Infinity))
         .filter(Entity.uniques)
@@ -67,23 +67,23 @@ import Entity from './Entity.js';
     }
 
   /** */
-    static uniques(intent, index, list) {
+    static uniques(intent, index, list = []) {
       return list
         .findIndex(temp => temp.id === intent.id) === index;
     }
 
   /** */
-    static import(array, intents) { // !
+    static import(array = [], intents = []) { // !
       return array.map(e => intents.find(intent => intent.id === e));
     }
 
   /** */
-    static export(list) {
+    static export(list = []) {
       return list.map(e => e.id);
     }
 
   /** проверка вхождения намерения в список / in */
-    static in(item, list) {
+    static in(item, list = []) {
       return list.some(e => e.id === item.id);
     }
   }

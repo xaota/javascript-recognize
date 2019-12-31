@@ -52,18 +52,18 @@
     }
 
   /** */
-    static uniques(entity, index, list) {
+    static uniques(entity, index, list = []) {
       return list
         .findIndex(temp => temp.id === entity.id) === index;
     }
 
   /** */
-    static import(array, entities) {
+    static import(array = [], entities = []) {
       return array.map(e => entities.find(entity => entity.id === e));
     }
 
   /** */
-    static export(list) {
+    static export(list = []) {
       return list.map(e => e.id);
     }
 
@@ -73,7 +73,7 @@
     }
 
   /** проверка вхождения сущности в список / in */
-    static in(item, list) {
+    static in(item, list = []) {
       return list.some(e => e.id === item.id);
     }
   }
