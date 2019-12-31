@@ -21,7 +21,7 @@ import Entity from './Entity.js';
     * @param {...string} values добавляемые намерения
     * @return {Intent} @this
     */
-    add(...values = []) {
+    add(...values) {
       this.entities = this.entities
         .concat(values.flat(Infinity))
         .filter(Entity.uniques)
