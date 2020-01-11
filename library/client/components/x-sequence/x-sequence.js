@@ -36,6 +36,7 @@ const component = Component.meta(import.meta.url, 'x-sequence');
       // const node = this.shadowRoot;
       const {sequence, origin, positive = []} = this.store();
       showSequence(this, sequence, positive);
+      return this;
     }
   }
 
